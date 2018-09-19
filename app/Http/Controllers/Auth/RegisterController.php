@@ -72,11 +72,27 @@ class RegisterController extends Controller
 
     public function showRegistrationForm()
     {
-        return redirect('login');
+        if (config('setting.register')== FALSE) {
+            return redirect('login');
+            
+        }else{
+            return view('auth.register');
+        }
     }
 
     public function register(Request $request)
-        {
+    {
+        if ( config('setting.register')== FALSE) {
             abort(404);
+        }else{
+            $this->validator($request->all())->validate();
+
+            event(new Registered($user = $this->create($request->all())));
+    
+            $this->guard()->login($user);
+    
+            return $this->registered($request, $user)
+                            ?: redirect($this->redirectPath());
         }
+    }
 }
