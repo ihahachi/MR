@@ -45,7 +45,9 @@
                             </li>
                             <li class="nav-item">
                                 @if (Route::has('register'))
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    @if (config('setting.register')==TRUE)
+                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    @endif
                                 @endif
                             </li>
                         @else

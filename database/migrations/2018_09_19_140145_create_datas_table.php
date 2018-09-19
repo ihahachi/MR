@@ -32,7 +32,7 @@ class CreateDatasTable extends Migration
             $table->double('Nitrites')->nullable();
             $table->double('Sulfures')->nullable();
             $table->double('Fluorures')->nullable();
-            $table->double('Chrome hexavalent')->nullable();
+            $table->double('Chrome_hexavalent')->nullable();
             $table->double('Matiere_decantable')->nullable();
             $table->double('Hydrocarbures')->nullable();
             $table->double('HAP')->nullable();
