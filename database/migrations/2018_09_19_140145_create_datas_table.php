@@ -16,41 +16,41 @@ class CreateDatasTable extends Migration
         Schema::create('datas', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->string('Nom_echant_01');
-            $table->string('Nom_echant_02');
-            $table->string('Nom_echant_03');
+            $table->string('Nom_echant_01')->nullable();
+            $table->string('Nom_echant_02')->nullable();
+            $table->string('Nom_echant_03')->nullable();
             $table->string('Date_pre');
-            $table->string('milieu');
-            $table->string('zone');
-            $table->string('Wilaya');
-            $table->string('Commune');
+            $table->string('milieu')->nullable();
+            $table->string('zone')->nullable();
+            $table->string('Wilaya')->nullable();
+            $table->string('Commune')->nullable();
             $table->double('Longitude');
             $table->double('Latitude');
 
-            $table->integer('frequence');
-$table->double('Nitrates');
-$table->double('Nitrites');
-$table->double('Sulfures');
-$table->double('Fluorures');
-$table->double('Chrome hexavalent');
-$table->double('Matiere_decantable');
-$table->double('Hydrocarbures');
-$table->double('HAP');
-$table->double('Cadmium');
-$table->double('Chrome');
-$table->double('Cuivre');
-$table->double('Zinc');
-$table->double('Plomb');
-$table->double('Mercure');
-$table->double('Calcium');
-$table->double('Cobalt');
-$table->double('Fer');
-$table->double('Magnesium');
-$table->double('Manganese');
-$table->double('Nickel');
-$table->double('Argent');
-$table->double('Molybdene');
-$table->double('Aluminum');
+            $table->integer('frequence')->nullable();
+            $table->double('Nitrates')->nullable();
+            $table->double('Nitrites')->nullable();
+            $table->double('Sulfures')->nullable();
+            $table->double('Fluorures')->nullable();
+            $table->double('Chrome hexavalent')->nullable();
+            $table->double('Matiere_decantable')->nullable();
+            $table->double('Hydrocarbures')->nullable();
+            $table->double('HAP')->nullable();
+            $table->double('Cadmium')->nullable();
+            $table->double('Chrome')->nullable();
+            $table->double('Cuivre')->nullable();
+            $table->double('Zinc')->nullable();
+            $table->double('Plomb')->nullable();
+            $table->double('Mercure')->nullable();
+            $table->double('Calcium')->nullable();
+            $table->double('Cobalt')->nullable();
+            $table->double('Fer')->nullable();
+            $table->double('Magnesium')->nullable();
+            $table->double('Manganese')->nullable();
+            $table->double('Nickel')->nullable();
+            $table->double('Argent')->nullable();
+            $table->double('Molybdene')->nullable();
+            $table->double('Aluminum')->nullable();
 
             $table->timestamps();
 
@@ -66,13 +66,13 @@ $table->double('Aluminum');
      * @return void
      */
     public function down()
-    {  
-         Schema::table('datas', function (Blueprint $table) 
-        { 
+    {
+         Schema::table('datas', function (Blueprint $table)
+        {
              $table->dropForeign(['user_id']);
              $table->dropColumn('user_id');
                 Schema::dropIfExists('datas');
          });
-               
+
     }
 }
