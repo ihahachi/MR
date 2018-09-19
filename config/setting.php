@@ -3,7 +3,7 @@
 return array(
 
 
-        'register' => TRUE ,   // TRUE , FALSE
+        'register' => FALSE ,   // TRUE , FALSE
         
 
 
