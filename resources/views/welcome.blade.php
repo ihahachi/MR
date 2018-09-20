@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>{{ config('setting.name') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Roboto" rel="stylesheet">
@@ -77,7 +77,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Accueil</a>
                     @else
                         <a href="{{ route('login') }}">connecter</a>
                         @if (config('setting.register')==TRUE)
@@ -90,7 +90,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Milieu Récepteur
+                    {{ config('setting.name') }}
                 </div>
 
 
