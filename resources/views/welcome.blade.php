@@ -10,7 +10,10 @@
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/font.min.css') }}">
+
+
 
         <!-- Styles -->
         <style>
@@ -79,6 +82,8 @@
         <div class=" flex-center position-ref full-height" >
             @if (Route::has('login'))
                 <div class="top-right links">
+                        <a class="text-white" target="_blank" href="http://onedd.org">ONEDD</a>
+                        <a class="text-white" target="_blank" href="http://www.meer.gov.dz">Ministre</a>
                     @auth
                         <a class="text-white" href="{{ url('/home') }}">Accueil</a>
                     @else
@@ -86,10 +91,8 @@
                         @if (config('setting.register')==TRUE)
                           <a class="text-white" href="{{ route('register') }}">Register</a>
                         @endif
-
                     @endauth
-                    <a class="text-white" target="_blank" href="http://onedd.org">ONEDD</a>
-                    <a class="text-white" target="_blank" href="http://www.meer.gov.dz">Ministre</a>
+
                 </div>
             @endif
 
@@ -104,9 +107,9 @@
                             {{ config('setting.name') }}
                     </div>
                         @auth
-                            <a class="mt-3 mb-5 btn btn-outline-light btn-block btn-lg" href="{{ url('/home') }}">Accueil</a><br>
+                            <a class="mt-3 mb-5 btn btn-outline-light btn-block btn-lg" href="{{ url('/home') }}">Accueil <i class="fas fa-home"></i></a><br>
                         @else
-                            <a class="mt-3 mb-5 btn btn-outline-light btn-block btn-lg" href="{{ route('login') }}">Connecter</a><br>
+                            <a class="mt-3 mb-5 btn btn-outline-light btn-block btn-lg" href="{{ route('login') }}">Connecter <i class="fas fa-sign-in-alt"></i></a><br>
                         @endauth
                 </div>
 

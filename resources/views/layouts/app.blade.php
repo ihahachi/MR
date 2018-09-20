@@ -13,7 +13,8 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Roboto" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/font.min.css') }}">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
