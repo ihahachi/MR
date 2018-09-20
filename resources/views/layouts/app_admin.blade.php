@@ -96,12 +96,12 @@
               </div>
             </li> --}}
             <li class="nav-item">
-              <a class="nav-link" href="charts.html">
+              <a class="nav-link" href="{{ url('/new') }}">
                 <i class="fas fa-fw fa-map-marked-alt"></i>
                 <span>Ajouter un point</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tables.html">
+              <a class="nav-link" href="{{ url('/list') }}">
                 <i class="fas fa-fw fa-list-ul"></i>
                 <span>Mes points</span></a>
             </li>
@@ -111,13 +111,7 @@
 
             <div class="container-fluid">
 
-              <!-- Breadcrumbs-->
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="{{ url('/home') }}">Accueil</a>
-                </li>
-                <li class="breadcrumb-item active">Blank Page</li>
-              </ol>
+
 
               <!-- Page Content -->
               @yield('content')

@@ -4,17 +4,17 @@
 
   <!-- Breadcrumbs-->
   <ol class="breadcrumb">
-    {{-- <li class="breadcrumb-item">
+    <li class="breadcrumb-item">
         <a href="{{ url('/home') }}">Accueil</a>
-    </li> --}}
-    <li class="breadcrumb-item active">Accueil</li>
+    </li>
+    <li class="breadcrumb-item active">Mes points</li>
     </ol>
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">List</div>
 
                 <div class="card-body">
                     @if (session('status'))
