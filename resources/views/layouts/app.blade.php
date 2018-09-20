@@ -26,7 +26,7 @@
             }
         </style>
 </head>
-<body>
+<body class="bg-info">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -67,7 +67,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                                     Déconnexion
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -81,7 +81,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 ">
             @yield('content')
         </main>
     </div>
