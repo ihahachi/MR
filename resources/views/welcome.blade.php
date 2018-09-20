@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('setting.name') }}</title>
+         <!-- Styles -->
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Roboto" rel="stylesheet">
@@ -20,7 +22,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                background-color: #dee8e6;
+
 
             }
 
@@ -51,8 +53,9 @@
             }
 
             .title {
-                color:  #007c63;
+                color:  #fff;
                 font-size: 84px;
+
             }
 
             .links > a {
@@ -71,26 +74,40 @@
         </style>
     </head>
 
-    <body >
+    <body class="bg-info" >
 
         <div class=" flex-center position-ref full-height" >
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Accueil</a>
+                        <a class="text-white" href="{{ url('/home') }}">Accueil</a>
                     @else
-                        <a href="{{ route('login') }}">connecter</a>
+                        <a  class="text-white" href="{{ route('login') }}">Connecter</a>
                         @if (config('setting.register')==TRUE)
-                          <a href="{{ route('register') }}">Register</a>
+                          <a class="text-white" href="{{ route('register') }}">Register</a>
                         @endif
 
                     @endauth
+                    <a class="text-white" target="_blank" href="http://onedd.org">ONEDD</a>
+                    <a class="text-white" target="_blank" href="http://www.meer.gov.dz">Ministre</a>
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    {{ config('setting.name') }}
+
+                <div class="m-b-md">
+                    <img class="mb-2" src="img/onedd_logo.png" alt="logo" style="width: 100px;">
+
+                    <p class="m-0 text-light">Ministre de l'Environnement et des Energies Renouvelables</p>
+                    <p class="m-0 mb-3 text-light">Observatoire National de l'Environnement et du Développement Durable</p>
+                    <div class="title">
+                            {{ config('setting.name') }}
+                    </div>
+                        @auth
+                            <a class="mt-3 mb-5 btn btn-outline-light btn-block btn-lg" href="{{ url('/home') }}">Accueil</a><br>
+                        @else
+                            <a class="mt-3 mb-5 btn btn-outline-light btn-block btn-lg" href="{{ route('login') }}">Connecter</a><br>
+                        @endauth
                 </div>
 
 

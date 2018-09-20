@@ -10,13 +10,13 @@
               <div class="form-group">
                 <div class="form-label-group">
                   <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
-                  <label for="inputEmail">Email address</label>
+                  <label for="inputEmail">Adresse E-Mail</label>
                 </div>
               </div>
               <div class="form-group">
                 <div class="form-label-group">
                   <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                  <label for="inputPassword">Password</label>
+                  <label for="inputPassword">Mot de passe</label>
                 </div>
               </div>
               <div class="form-group">
@@ -27,8 +27,8 @@
                   </label>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                    {{ __('Login') }}
+              <button type="submit" class="btn btn-success btn-block">
+                    Connecter
                 </button>
             </form>
             <div class="text-center">

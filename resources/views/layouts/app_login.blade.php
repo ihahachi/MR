@@ -18,9 +18,17 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Roboto" rel="stylesheet">
+     <style>
+         html,body{
+            font-family: 'Abel', sans-serif;
+             font-weight: 200;
+         }
+     </style>
 </head>
 
-<body class="bg-dark">
+<body class="bg-info">
 
 
         @yield('content')
