@@ -43,7 +43,7 @@
           <!-- Navbar Search -->
           <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control" placeholder="Rechercher ..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-outline-light" type="button">
                   <i class="fas fa-search"></i>
@@ -54,39 +54,15 @@
 
           <!-- Navbar -->
           <ul class="bg-info navbar-nav ml-auto ml-md-0">
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <span class="badge badge-danger">9+</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-envelope fa-fw"></i>
-                <span class="badge badge-danger">7</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-circle fa-fw"></i>
+                    <i class="fas fa-user-circle fa-fw"></i> {{ Auth::user()->name }}
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">Settings</a>
+                {{-- <a class="dropdown-item" href="#">Settings</a>
                 <a class="dropdown-item" href="#">Activity Log</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+                <div class="dropdown-divider"></div> --}}
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Déconnexion</a>
               </div>
             </li>
           </ul>
@@ -96,14 +72,14 @@
         <div id="wrapper">
 
           <!-- Sidebar -->
-          <ul class="bg-secondary sidebar navbar-nav">
+          <ul class="bg-dark sidebar navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/home') }}">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <i class="fas fa-fw fa-home"></i>
                 <span>Accueil</span>
               </a>
             </li>
-            <li class="nav-item dropdown">
+            {{-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Pages</span>
@@ -118,16 +94,16 @@
                 <a class="dropdown-item" href="404.html">404 Page</a>
                 <a class="dropdown-item active" href="blank.html">Blank Page</a>
               </div>
-            </li>
+            </li> --}}
             <li class="nav-item">
               <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span></a>
+                <i class="fas fa-fw fa-map-marked-alt"></i>
+                <span>Ajouter un point</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="tables.html">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Tables</span></a>
+                <i class="fas fa-fw fa-list-ul"></i>
+                <span>Mes points</span></a>
             </li>
           </ul>
 
@@ -153,7 +129,8 @@
             <footer class="sticky-footer">
               <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                  <span>Copyright © Your Website 2018</span>
+                  <span>Copyright ©  2018 - </span>
+                  <span>Observatoire National de l'Environnement et du Développement Durable</span>
                 </div>
               </div>
             </footer>
@@ -174,15 +151,24 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Déconnexion ?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
-              <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+              <div class="modal-body">Sélectionnez "Déconnexion" ci-dessous si vous êtes prêt à terminer votre session en cours.</div>
               <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+
+                </form>
+                <a class="btn btn-info" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                    Déconnexion
+                </a>
+
               </div>
             </div>
           </div>
