@@ -40,3 +40,5 @@
 
  <!-- Core plugin JavaScript-->
  <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+</body>
+</html>
