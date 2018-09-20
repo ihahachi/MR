@@ -8,18 +8,23 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Exo+2|Roboto" rel="stylesheet">
 
         <!-- Styles -->
         <style>
-            html, body {
+
+            html ,body{
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Abel', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background-color: #dee8e6;
+
             }
+
+
 
             .full-height {
                 height: 100vh;
@@ -46,6 +51,7 @@
             }
 
             .title {
+                color:  #007c63;
                 font-size: 84px;
             }
 
@@ -64,8 +70,10 @@
             }
         </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
+
+    <body >
+
+        <div class=" flex-center position-ref full-height" >
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -82,7 +90,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Mileu Recpteur
+                    Milieu Récepteur
                 </div>
 
 
