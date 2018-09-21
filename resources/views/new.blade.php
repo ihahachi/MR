@@ -70,6 +70,56 @@
                                                 @include('layouts.commune')
                                             </div>
                                         </div>
+                                        <div class="form-row my-3">
+                                            <div class="col-2">
+                                                <label>Longitude x :</label>
+                                            </div>
+                                            <div class="col-1">
+                                                <label>D°</label>
+                                                <input type="number" id="DMS" class="form-control">
+                                            </div>
+                                            <div class="col-1">
+                                                <label>M'</label>
+                                                <input type="number" id="DMS" class="form-control">
+                                            </div>
+                                            <div class="col-1">
+                                                <label>S"</label>
+                                                <input type="number" id="DMS" class="form-control">
+                                            </div>
+                                            <div class="col-1">
+                                                <label>Direction</label>
+                                                <select  class="form-control" name="milieu" id="milieu">
+                                                    <option value="E">E</option>
+                                                    <option value="O">O</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-2">
+                                                    <label>Latitude y :</label>
+                                            </div>
+                                            <div class="col-1">
+                                                    <label>D°</label>
+                                                    <input type="number" id="DMS" class="form-control">
+                                                </div>
+                                                <div class="col-1">
+                                                    <label>M'</label>
+                                                    <input type="number" id="DMS" class="form-control">
+                                                </div>
+                                                <div class="col-1">
+                                                    <label>S"</label>
+                                                    <input type="number" id="DMS" class="form-control">
+                                                </div>
+                                                <div class="col-1">
+                                                    <label>Direction</label>
+                                                    <select  class="form-control" name="milieu" id="milieu">
+                                                        <option value="N">N</option>
+                                                        <option value="S">S</option>
+                                                    </select>
+                                                </div>
+                                             {{-- <div class="col">
+
+                                            <button class="btn btn-info" id="target">Convert DMS</button>
+                                             </div> --}}
+                                        </div>
 
                                 </form>
                             </div>
