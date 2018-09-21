@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
 
     $("#milieu").change(function () {
@@ -13,4 +10,16 @@ $(document).ready(function() {
             $("#zone").find("option:visible:first").val());
 
     }).change();
+
+    $("#wilaya").change(function () {
+        $("#commune")
+            .find("option")
+            .show()
+            .not("option[value*='" + this.value + "']").hide();
+
+        $("#commune").val(
+            $("#commune").find("option:visible:first").val());
+
+    }).change();
+
 });
