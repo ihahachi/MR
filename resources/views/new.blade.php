@@ -73,7 +73,7 @@
                                         <div class="form-row my-3">
                                             <div class="col-2">
                                                 <label>Longitude x :</label>
-                                                <input type="text" >
+                                                <input type="number" step="0.01" disabled class="form-control" id="rex">
                                             </div>
                                             <div class="col-1">
                                                 <label>D°</label>
@@ -96,6 +96,7 @@
                                             </div>
                                             <div class="col-2">
                                                 <label>Latitude y :</label>
+                                                <input type="number" step="0.01" disabled class="form-control" id="rey">
                                             </div>
                                             <div class="col-1">
                                                     <label>D°</label>
@@ -121,11 +122,7 @@
                                                 <button class="btn btn-info" id="target">Convert DMS</button>
                                                 </div> --}}
                                             </div>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <button class="btn btn-info" id="target">Convert DMS</button>
-                                                </div>
-                                            </div>
+
 
 
                                 </form>

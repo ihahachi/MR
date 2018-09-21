@@ -6,7 +6,7 @@ function ConvertDMSToDD(degrees, minutes, seconds, direction) {
     return dd.toFixed(4);
 }
 
-$( "#target" ).click(function() {
+$( ".form-control" ).change(function() {
 
     var DX = $('#DX').val();
     var MX = $('#MX').val();
@@ -20,8 +20,10 @@ $( "#target" ).click(function() {
     var directionY = $('#directionY').val();
     var reY = ConvertDMSToDD(parseFloat(DY), parseFloat(MY), parseFloat(SY),directionY);
 
-    alert(reX);
-    alert(reY);
+    $('#rex').val(reX);
+    $('#rey').val(reY);
+    // alert(reX);
+    // alert(reY);
 
 });
 
