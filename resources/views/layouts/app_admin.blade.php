@@ -19,6 +19,11 @@
     <link href="{{ asset('css/font.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
     <link href="{{ asset('css/dataTables.bootstrap.css') }}" rel="stylesheet">
+
+    <!-- elements wizard -->
+    <link href="{{ asset('css/wizard.css') }}" rel="stylesheet">
+
+
      <!-- Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
@@ -176,9 +181,14 @@
  <script src="{{ asset('js/jquery.min.js') }}"></script>
  <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 
+
+
  <!-- Core plugin JavaScript-->
  <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
  <!-- Custom scripts for all pages-->
  <script src="{{ asset('js/sb-admin.min.js') }}"></script>
+ <script src="{{ asset('js/wizard.js') }}"></script>
+
+
 </body>
 </html>
