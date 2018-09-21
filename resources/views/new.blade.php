@@ -67,14 +67,46 @@
                                         </div>
                                         <div class="col">
                                                 <label>Type de milieu</label>
-                                            <select id="inputState" class="form-control">
+                                            <select  class="form-control" name="milieu" id="milieu">
                                                 <option selected>Choisir...</option>
-                                                <option value="">Les Oueds</option>
-                                                <option value="">Les Grands Ensembles Portuaires</option>
-                                                <option value="">Baies du Littoral</option>
-                                                <option value="">Lacs et Chotts</option>
+                                                <option value="01">Les Oueds</option>
+                                                <option value="02">Les Grands Ensembles Portuaires</option>
+                                                <option value="03">Baies du Littoral</option>
+                                                <option value="04">Lacs et Chotts</option>
                                             </select>
                                         </div>
+                                    </div>
+                                    <div class="form-row mt-3">
+                                            <div class="col">
+                                                <label>zone de surveillance</label>
+                                                <select  class="form-control" name="zone" id="zone">
+
+                                                        <option value="01_Macta">Macta</option>
+                                                        <option value="01_Tafna">Tafna</option>
+                                                        <option value="01_Chellif">Chellif</option>
+                                                        <option value="01_Mazafran">Mazafran</option>
+                                                        <option value="01_El Harrach">El Harrach</option>
+                                                        <option value="01_EL Hamiz">EL Hamiz</option>
+                                                        <option value="01_Les Issers">Les Issers</option>
+                                                        <option value="01_Sebaou">Sebaou</option>
+                                                        <option value="01_Soumam">Soumam</option>
+                                                        <option value="01_Djendjen">Djendjen</option>
+                                                        <option value="01_Saf-Saf">Saf-Saf</option>
+                                                        <option value="01_Seybouse">Seybouse</option>
+
+                                                        <option value="02_Ghazaouet">Ghazaouet</option>
+                                                        <option value="02_Oran">Oran</option>
+                                                        <option value="02_Arzew">Arzew</option>
+                                                        <option value="02_Alger">Alger</option>
+                                                        <option value="02_Béjaia">Béjaia</option>
+                                                        <option value="02_Skikda">Skikda</option>
+                                                        <option value="02_Djendjen">Djendjen</option>
+                                                        <option value="02_Annaba">Annaba</option>
+
+
+
+                                                </select>
+                                            </div>
                                     </div>
 
                             </form>
