@@ -73,53 +73,60 @@
                                         <div class="form-row my-3">
                                             <div class="col-2">
                                                 <label>Longitude x :</label>
+                                                <input type="text" >
                                             </div>
                                             <div class="col-1">
                                                 <label>D°</label>
-                                                <input type="number" id="DMS" class="form-control">
+                                                <input type="number" step="0.01"  id="DX" class="form-control">
                                             </div>
                                             <div class="col-1">
                                                 <label>M'</label>
-                                                <input type="number" id="DMS" class="form-control">
+                                                <input type="number" step="0.01"  id="MX" class="form-control">
                                             </div>
                                             <div class="col-1">
                                                 <label>S"</label>
-                                                <input type="number" id="DMS" class="form-control">
+                                                <input type="number" step="0.01" id="SX" class="form-control">
                                             </div>
                                             <div class="col-1">
                                                 <label>Direction</label>
-                                                <select  class="form-control" name="milieu" id="milieu">
+                                                <select  class="form-control" name="direction" id="directionX">
                                                     <option value="E">E</option>
                                                     <option value="O">O</option>
                                                 </select>
                                             </div>
                                             <div class="col-2">
-                                                    <label>Latitude y :</label>
+                                                <label>Latitude y :</label>
                                             </div>
                                             <div class="col-1">
                                                     <label>D°</label>
-                                                    <input type="number" id="DMS" class="form-control">
+                                                    <input type="number" step="0.01" id="DY" class="form-control">
                                                 </div>
                                                 <div class="col-1">
                                                     <label>M'</label>
-                                                    <input type="number" id="DMS" class="form-control">
+                                                    <input type="number" step="0.01" id="MY" class="form-control">
                                                 </div>
                                                 <div class="col-1">
                                                     <label>S"</label>
-                                                    <input type="number" id="DMS" class="form-control">
+                                                    <input type="number" step="0.01" id="SY" class="form-control">
                                                 </div>
                                                 <div class="col-1">
                                                     <label>Direction</label>
-                                                    <select  class="form-control" name="milieu" id="milieu">
+                                                    <select  class="form-control" name="directionY" id="directionY">
                                                         <option value="N">N</option>
                                                         <option value="S">S</option>
                                                     </select>
                                                 </div>
-                                             {{-- <div class="col">
+                                                {{-- <div class="col">
 
-                                            <button class="btn btn-info" id="target">Convert DMS</button>
-                                             </div> --}}
-                                        </div>
+                                                <button class="btn btn-info" id="target">Convert DMS</button>
+                                                </div> --}}
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <button class="btn btn-info" id="target">Convert DMS</button>
+                                                </div>
+                                            </div>
+
 
                                 </form>
                             </div>

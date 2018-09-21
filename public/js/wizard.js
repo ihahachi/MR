@@ -1,18 +1,29 @@
-function ParseDMS(input) {
-    var parts = input.split(/[^\d\w]+/);
-    var lat = ConvertDMSToDD(parts[0], parts[1], parts[2], parts[3]);
-    var lng = ConvertDMSToDD(parts[4], parts[5], parts[6], parts[7]);
-    return lat;
-}
-
 function ConvertDMSToDD(degrees, minutes, seconds, direction) {
-    var dd = degrees + minutes/60 + seconds/(60*60);
-
+    var dd = degrees +(minutes/60) + (seconds/3600);
     if (direction == "O") {
         dd = dd * -1;
     } // Don't do anything for N or E
-    return dd;
+    return dd.toFixed(4);
 }
+
+$( "#target" ).click(function() {
+
+    var DX = $('#DX').val();
+    var MX = $('#MX').val();
+    var SX = $('#SX').val();
+    var directionX = $('#directionX').val();
+    var reX = ConvertDMSToDD(parseFloat(DX), parseFloat(MX), parseFloat(SX),directionX);
+
+    var DY = $('#DY').val();
+    var MY = $('#MY').val();
+    var SY = $('#SY').val();
+    var directionY = $('#directionY').val();
+    var reY = ConvertDMSToDD(parseFloat(DY), parseFloat(MY), parseFloat(SY),directionY);
+
+    alert(reX);
+    alert(reY);
+
+});
 
 
 $(document).ready(function() {
@@ -40,11 +51,6 @@ $(document).ready(function() {
     }).change();
 
 
-$( "#target" ).click(function() {
-var bla = $('#DMS').val();
-var re = ParseDMS(bla);
-console.log(re);
 
-});
 
 });
