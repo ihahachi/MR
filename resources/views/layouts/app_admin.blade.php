@@ -19,6 +19,7 @@
     <link href="{{ asset('css/font.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
     <link href="{{ asset('css/dataTables.bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
 
     <!-- elements wizard -->
     <link href="{{ asset('css/wizard.css') }}" rel="stylesheet">

@@ -18,6 +18,7 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
      <!-- Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
      <style>
