@@ -52,7 +52,57 @@ $(document).ready(function() {
 
     }).change();
 
+  
 
 
 
+
+});
+
+
+// $( ".mov" ).mouseenter(function() {
+//     $('.mov').addClass('animated bounceIn');  
+// });  
+
+// $( ".mov" ).mouseleave(function() {
+//     $('.mov').removeClass('animated bounceIn');  
+// });  
+
+
+$(document).ready(function() {
+    $('.movH').removeAttr('hidden');
+    $('.movH').addClass('animated bounceInDown');  
+});
+
+
+$(document).ready(function() {
+    $('.movLogo').removeAttr('hidden');
+    $('.movLogo').addClass('animated rollIn delay-2s');  
+});
+
+
+$(document).ready(function() {
+    $('.mov').removeAttr('hidden');
+    $('.movT').removeAttr('hidden');
+    $('.mov').addClass('animated zoomIn delay-3s');  
+    $('.movT').addClass('animated bounceInRight delay-3s');  
+});
+
+
+$(document).ready(function() { 
+    $('.card-login').removeAttr('hidden');  
+    $('.card-login').addClass('animated bounceInDown');  
+});
+
+
+
+$(document).ready(function() { 
+    // $('#navbar').removeAttr('hidden');  
+    //  $('#navbar').addClass('animated fadeIn');
+    // $('#sidebar').removeAttr('hidden');  
+    //  $('#sidebar').addClass('animated fadeIn'); 
+
+    $('#loading').delay(1000).hide(0);
+    $('.core').removeAttr('hidden');  
+    $('.core').addClass('animated fadeIn delay-1s');
 });

@@ -2,15 +2,23 @@
 
 @section('content')
 
+<div id="loading" class="container">
+    <div class="row">
+        <div class="col-md-12 text-center ">
+            <img src="{{ asset('img/loading.gif') }}" alt="">
+        </div>
+    </div>    
+</div>
+
   <!-- Breadcrumbs-->
-  <ol class="breadcrumb">
+  <ol class="breadcrumb core" hidden>
     <li class="breadcrumb-item">
         <a href="{{ url('/home') }}">Accueil</a>
     </li>
     <li class="breadcrumb-item active">Ajouter un point</li>
     </ol>
 
-<div class="container">
+<div class="container core" hidden>
     <div class="row">
             <div class="col-md-12 text-center ">
                     <nav class="nav-justified ">

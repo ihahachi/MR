@@ -36,9 +36,9 @@
      </style>
 </head>
 
-<body id="page-top">
+<body id="page-top" >
 
-        <nav class=" navbar navbar-expand navbar-dark bg-info static-top">
+        <nav id="navbar" class=" navbar navbar-expand navbar-dark bg-info static-top" >
 
         <a class="navbar-brand mr-1" href="{{ url('/home') }}">{{ config('setting.name') }}</a>
 
@@ -78,7 +78,7 @@
         <div id="wrapper">
 
           <!-- Sidebar -->
-          <ul class="bg-dark sidebar navbar-nav">
+          <ul id="sidebar"  class="bg-dark sidebar navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/home') }}">
                 <i class="fas fa-fw fa-home"></i>

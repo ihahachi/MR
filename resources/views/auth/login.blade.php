@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container pt-5">
-        <div class="card card-login mx-auto mt-5">
+        <div class="card card-login mx-auto mt-5" hidden>
           <div class="card-header">Ouvrir une session</div>
           <div class="card-body">
             <form method="POST" action="{{ route('login') }}">

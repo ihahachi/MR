@@ -3,14 +3,14 @@
 @section('content')
 
   <!-- Breadcrumbs-->
-  <ol class="breadcrumb">
+  <ol class="breadcrumb core" hidden>
     <li class="breadcrumb-item">
         <a href="{{ url('/home') }}">Accueil</a>
     </li>
     <li class="breadcrumb-item active">Mes points</li>
     </ol>
 
-<div class="container">
+<div class="container core"hidden>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
