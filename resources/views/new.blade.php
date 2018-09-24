@@ -79,10 +79,6 @@
                                             </div>
                                         </div>
                                         <div class="form-row my-3">
-                                            <div class="col-2">
-                                                <label>Longitude x :</label>
-                                                <input type="number" step="0.01" disabled class="form-control" id="rex">
-                                            </div>
                                             <div class="col-1">
                                                 <label>D°</label>
                                                 <input type="number" step="0.01"  id="DX" class="form-control">
@@ -103,9 +99,10 @@
                                                 </select>
                                             </div>
                                             <div class="col-2">
-                                                <label>Latitude y :</label>
-                                                <input type="number" step="0.01" disabled class="form-control" id="rey">
+                                                <label>Longitude x :</label>
+                                                <input type="number" step="0.01" disabled class="form-control" id="rex">
                                             </div>
+
                                             <div class="col-1">
                                                     <label>D°</label>
                                                     <input type="number" step="0.01" id="DY" class="form-control">
@@ -125,6 +122,10 @@
                                                         <option value="S">S</option>
                                                     </select>
                                                 </div>
+                                                <div class="col-2">
+                                                    <label>Latitude y :</label>
+                                                    <input type="number" step="0.01" disabled class="form-control" id="rey">
+                                                </div>
                                                 {{-- <div class="col">
 
                                                 <button class="btn btn-info" id="target">Convert DMS</button>
@@ -136,20 +137,22 @@
                                 </form>
                             </div>
                         </div>
+
                         <div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
                         <div class="pt-3"></div>
                             <p>2. There's another way to do this for layouts that doesn't have to put the navbar inside the container, and which doesn't require any CSS or Bootstrap overrides.
 
                                 Simply place a div with the Bootstrap container class around the navbar. This will center the links inside the navbar:
 
-                    </div>
-                    <div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
+                        </div>
+
+                        <div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
                         <div class="pt-3"></div>
                             <p>3. There's another way to do this for layouts that doesn't have to put the navbar inside the container, and which doesn't require any CSS or Bootstrap overrides.
 
                                 Simply place a div with the Bootstrap container class around the navbar. This will center the links inside the navbar:
 
-                    </div>
+                        </div>
 
                     </div>
                 </div>

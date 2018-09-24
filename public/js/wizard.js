@@ -1,6 +1,6 @@
 function ConvertDMSToDD(degrees, minutes, seconds, direction) {
     var dd = degrees +(minutes/60) + (seconds/3600);
-    if (direction == "O") {
+    if (direction == "O" || direction == "S") {
         dd = dd * -1;
     } // Don't do anything for N or E
     return dd.toFixed(4);
