@@ -60,13 +60,7 @@ $(document).ready(function() {
 });
 
 
-// $( ".mov" ).mouseenter(function() {
-//     $('.mov').addClass('animated bounceIn');  
-// });  
 
-// $( ".mov" ).mouseleave(function() {
-//     $('.mov').removeClass('animated bounceIn');  
-// });  
 
 
 $(document).ready(function() {
@@ -97,12 +91,28 @@ $(document).ready(function() {
 
 
 $(document).ready(function() { 
-    // $('#navbar').removeAttr('hidden');  
-    //  $('#navbar').addClass('animated fadeIn');
-    // $('#sidebar').removeAttr('hidden');  
-    //  $('#sidebar').addClass('animated fadeIn'); 
-
     $('#loading').delay(1000).hide(0);
     $('.core').removeAttr('hidden');  
     $('.core').addClass('animated fadeIn delay-1s');
+});
+
+
+
+$(document).ready(function() { 
+
+    $("input[value=option1]").on( "change", function() {
+        if( $(this).is(':checked') ) {
+            $("#DMS").fadeOut();
+            $("#DD").fadeIn("slow");
+        }
+    } );
+
+    $("input[value=option2]").on( "change", function() {
+        if( $(this).is(':checked') ) {
+            $("#DMS").fadeIn("slow");
+            $("#DD").fadeOut();
+        }
+    } );
+
+
 });
