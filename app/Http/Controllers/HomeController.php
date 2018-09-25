@@ -35,4 +35,9 @@ class HomeController extends Controller
     {
         return view('list');
     }
+
+    public function save(Request $request)
+    {
+        return $request;
+    }
 }
