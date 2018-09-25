@@ -18,8 +18,10 @@
     <li class="breadcrumb-item active">Ajouter un point</li>
     </ol>
 
+<form>
 <div class="container core" hidden>
     <div class="row">
+
             <div class="col-md-12 text-center ">
                     <nav class="nav-justified ">
                     <div class="nav nav-tabs " id="nav-tab" role="tablist">
@@ -32,7 +34,7 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
                             <div class="pt-4">
-                                <form>
+
                                         <div class="form-row">
                                             <div class="col">
                                                 <label>Nom de échantillonneur 1</label>
@@ -81,7 +83,7 @@
                                         @include('layouts.xy')
 
 
-                                </form>
+
                             </div>
                         </div>
 
@@ -103,15 +105,15 @@
                         </div>
 
                         <div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
-                        <div class="pt-3"></div>
-                            <p>3. There's another way to do this for layouts that doesn't have to put the navbar inside the container, and which doesn't require any CSS or Bootstrap overrides.
-
-                                Simply place a div with the Bootstrap container class around the navbar. This will center the links inside the navbar:
-
+                            <div class="pt-3">
+                                @include('layouts.parametre')
+                            </div>
                         </div>
 
                     </div>
                 </div>
+
     </div>
 </div>
+</form>
 @endsection
