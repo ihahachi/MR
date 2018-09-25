@@ -27,7 +27,25 @@ class CreateDatasTable extends Migration
             $table->double('Longitude');
             $table->double('Latitude');
             $table->integer('Frequence')->nullable();
-
+            // EAU
+            $table->double('Temperature')->nullable();
+            $table->double('Ph')->nullable();
+            $table->double('Conductivite_specifique')->nullable();
+            $table->double('Salinite')->nullable();
+            $table->double('Oxygene_dissous')->nullable();
+            $table->double('Saturation_oxygene')->nullable();
+            $table->double('Debit')->nullable();
+            $table->double('DCO')->nullable();
+            $table->double('DBO')->nullable();
+            $table->double('MES')->nullable();
+            $table->double('Huile_graisses')->nullable();
+            $table->double('Phosphore')->nullable();
+            $table->double('Chlorures')->nullable();
+            $table->double('Ortho_phosphates')->nullable();
+            $table->double('Azote_kjeldahl')->nullable();
+            $table->double('Azote_total')->nullable();
+            $table->double('Indice_phenols')->nullable();
+            $table->double('Ammonium')->nullable();
             $table->double('Nitrates')->nullable();
             $table->double('Nitrites')->nullable();
             $table->double('Sulfures')->nullable();
@@ -51,6 +69,7 @@ class CreateDatasTable extends Migration
             $table->double('Argent')->nullable();
             $table->double('Molybdene')->nullable();
             $table->double('Aluminum')->nullable();
+
             // Sédiment
             $table->double('Hydrocarbures_sed')->nullable();
             $table->double('HAP_sed')->nullable();
@@ -80,10 +99,10 @@ class CreateDatasTable extends Migration
             $table->double('Cobalt_bio')->nullable();
             $table->double('Fer_bio')->nullable();
             $table->double('Magnésium_bio')->nullable();
-            $table->double('Manganèse_bio')->nullable();
+            $table->double('Manganese_bio')->nullable();
             $table->double('Nickel_bio')->nullable();
             $table->double('Argent_bio')->nullable();
-            $table->double('Molybdène_bio')->nullable();
+            $table->double('Molybdene_bio')->nullable();
             $table->double('Aluminum_bio')->nullable();
 
 

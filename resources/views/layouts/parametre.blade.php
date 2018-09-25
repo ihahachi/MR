@@ -76,64 +76,70 @@
 </div>
 
 <div class="row my-2">
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
+        <div class="col-2"><input type="text" class="form-control" placeholder="Hydrocarbures totaux" name="Hydrocarbures_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="HAP" name="HAP_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Cadmium (Cd)" name="Cadmium_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Chrome (Cr)" name="Chrome_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Cuivre (Cu)" name="Cuivre_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Zinc (Zn)" name="Zinc_sed"></div>
+</div>
+
+<div class="row my-2">
+        <div class="col-2"><input type="text" class="form-control" placeholder="Plomb (Pb)" name="Plomb_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Mercure (Hg)" name="Mercure_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Calcium" name="Calcium_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Cobalt" name="Cobalt_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Fer" name="Fer_sed"></div>
+        <div class="col-2"><input type="text" class="form-control" placeholder="Magnésium" name="Magnésium_sed"></div>
+</div>
+
+<div class="row my-2">
+    <div class="col-2"><input type="text" class="form-control" placeholder="Manganèse" name="Manganèse_sed"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Nickel" name="Nickel_sed"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Argent" name="Argent_sed"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Molybdène" name="Molybdène_sed"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Aluminum" name="Aluminum_sed"></div>
+
+</div>
+
+<hr class="my-4">
+
+<div class="row">
+    <div class="col">
+        <h4>Biotes</h4>
     </div>
 </div>
 
 <div class="row my-2">
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Cadmium (Cd)" name="Cadmium_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Chrome (Cr)" name="Chrome_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Cuivre (Cu)" name="Cuivre_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Zinc (Zn)" name="Zinc_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Plomb (Pb)" name="Plomb_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Mercure (Hg)" name="Mercure_bio"></div>
 </div>
 
 <div class="row my-2">
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
-    <div class="col-2">
-        <input type="text" class="form-control" placeholder="Échantillonneur 3">
-    </div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Calcium" name="Calcium_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Cobalt" name="Cobalt_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Fer" name="Fer_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Magnésium" name="Magnesium_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Manganèse" name="Manganèse_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Nickel" name="Nickel_bio"></div>
 </div>
+
+<div class="row my-2">
+    <div class="col-2"><input type="text" class="form-control" placeholder="Argent" name="Argent_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Molybdène" name="Molybdene_bio"></div>
+    <div class="col-2"><input type="text" class="form-control" placeholder="Aluminum" name="Aluminum_bio"></div>
+</div>
+
+<hr class="my-4">
+
+<div class="row my-5">
+        <div class="col">
+            <button class="btn btn-info" type="submit">
+                Enregistrer <i class="fas fa-save fas-fw"></i>
+            </button>
+        </div>
+    </div>
