@@ -7,7 +7,7 @@
         <div class="col-md-12 text-center ">
             <img src="{{ asset('img/loading.gif') }}" alt="">
         </div>
-    </div>    
+    </div>
 </div>
 
   <!-- Breadcrumbs-->
@@ -77,7 +77,7 @@
                                                 @include('layouts.commune')
                                             </div>
                                         </div>
-                                        
+
                                         @include('layouts.xy')
 
 
@@ -86,10 +86,19 @@
                         </div>
 
                         <div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
-                        <div class="pt-3"></div>
-                            <p>2. There's another way to do this for layouts that doesn't have to put the navbar inside the container, and which doesn't require any CSS or Bootstrap overrides.
-
-                                Simply place a div with the Bootstrap container class around the navbar. This will center the links inside the navbar:
+                        <div class="pt-5">
+                            <label for="">Nombre de fois</label>
+                            <select  class="form-control" name="milieu" id="milieu">
+                                <option selected>Choisir...</option>
+                                <option value="1">01 Fois</option>
+                                <option value="2">02 Fois</option>
+                                <option value="3">03 Fois</option>
+                                <option value="4">04 Fois</option>
+                                <option value="5">05 Fois</option>
+                                <option value="6">06 Fois</option>
+                                <option value="7">07 Fois</option>
+                            </select>
+                        </div>
 
                         </div>
 

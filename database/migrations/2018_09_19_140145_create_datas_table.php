@@ -20,14 +20,14 @@ class CreateDatasTable extends Migration
             $table->string('Nom_echant_02')->nullable();
             $table->string('Nom_echant_03')->nullable();
             $table->string('Date_pre');
-            $table->string('milieu')->nullable();
-            $table->string('zone')->nullable();
+            $table->string('Milieu')->nullable();
+            $table->string('Zone')->nullable();
             $table->string('Wilaya')->nullable();
             $table->string('Commune')->nullable();
             $table->double('Longitude');
             $table->double('Latitude');
+            $table->integer('Frequence')->nullable();
 
-            $table->integer('frequence')->nullable();
             $table->double('Nitrates')->nullable();
             $table->double('Nitrites')->nullable();
             $table->double('Sulfures')->nullable();
@@ -51,6 +51,42 @@ class CreateDatasTable extends Migration
             $table->double('Argent')->nullable();
             $table->double('Molybdene')->nullable();
             $table->double('Aluminum')->nullable();
+            // Sédiment
+            $table->double('Hydrocarbures_sed')->nullable();
+            $table->double('HAP_sed')->nullable();
+            $table->double('Cadmium_sed')->nullable();
+            $table->double('Chrome_sed')->nullable();
+            $table->double('Cuivre_sed')->nullable();
+            $table->double('Zinc_sed')->nullable();
+            $table->double('Plomb_sed')->nullable();
+            $table->double('Mercure_sed')->nullable();
+            $table->double('Calcium_sed')->nullable();
+            $table->double('Cobalt_sed')->nullable();
+            $table->double('Fer_sed')->nullable();
+            $table->double('Magnésium_sed')->nullable();
+            $table->double('Manganèse_sed')->nullable();
+            $table->double('Nickel_sed')->nullable();
+            $table->double('Argent_sed')->nullable();
+            $table->double('Molybdène_sed')->nullable();
+            $table->double('Aluminum_sed')->nullable();
+            // Biotes
+            $table->double('Cadmium_bio')->nullable();
+            $table->double('Chrome_bio')->nullable();
+            $table->double('Cuivre_bio')->nullable();
+            $table->double('Zinc_bio')->nullable();
+            $table->double('Plomb_bio')->nullable();
+            $table->double('Mercure_bio')->nullable();
+            $table->double('Calcium_bio')->nullable();
+            $table->double('Cobalt_bio')->nullable();
+            $table->double('Fer_bio')->nullable();
+            $table->double('Magnésium_bio')->nullable();
+            $table->double('Manganèse_bio')->nullable();
+            $table->double('Nickel_bio')->nullable();
+            $table->double('Argent_bio')->nullable();
+            $table->double('Molybdène_bio')->nullable();
+            $table->double('Aluminum_bio')->nullable();
+
+
 
             $table->timestamps();
 
